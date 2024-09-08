@@ -6,35 +6,71 @@
     <title>To Do It</title>
 </head>
 <body>
-    <div id="side-menu">
-        <button id="newBtn">New Item</button>
-        <form id="formElement" style="display: none;">
-            <li>
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title">
-            </li>
-            <li>
-                <label for="desc">Description</label>
-                <input type="text" name="desc" id="desc">
-            </li>
-            <li>
-                <label for="priority">Priority</label>
-                <select name="priority" id="priority">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-            </li>
-            <li>
-                <label for="dueDate">Due Date</label>
-                <input type="date" name="dueDate" id="dueDate">
-            </li>
-            <button id="addBtn" type="submit">Add Item</button>
-            <button id="cancelBtn" type="reset">Cancel</button>
-        </form>
-    </div>
-    <ul id="listDisplay">
+    <main>
+        <div id="side-menu">
+            <button id="newBtn">+ New Item</button>
+            <form id="formElement" style="display: none;">
+                <li>
+                    <input type="text" name="title" id="title" placeholder="Task Name">
+                </li>
+                <li>
+                    <input type="text" name="desc" id="desc" placeholder="Description">
+                </li>
+                <div id="button-options">
+                    <li>
+                        <select name="priority" id="priority">
+                            <option value="" disabled selected>Priority</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="date" name="dueDate" id="dueDate">
+                    </li>
+                </div>
+                <button id="addBtn" type="submit">Add Item</button>
+                <button id="cancelBtn" type="reset">Cancel</button>
+            </form>
 
-    </ul>
+            <button class="nav-button" id="todayBtn">Home</button>
+            <button class="nav-button" id="projectBtn">My Projects</button>
+        </div>
+
+        <div id="displayContainer">
+                <div id="homePage"></div>
+                <div id="projectPage"></div>
+            <div id="displayWrapper">
+                <ul id="listDisplay" style="display: none;">
+                    
+                </ul>
+                <ul id="projectDisplay" style="display: none;">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+        <div id="editTaskContainer">
+            <div id="header">
+                <button id="xBtn">X</button>
+                <div id="editTitle" contenteditable="true"></div>
+            </div>
+            <div id="main-section">
+                <h3 id="descTitle">Description:</h3>
+                <div id="editDesc" contenteditable="true"></div>
+                <h3 id="dateTitle">Date:</h3>
+                <input type="date" id="editDate"></input>
+                <h3 id="priorityTitle">Priority:</h3>
+                <select id="editPriority">
+                    <option value="Priority" disabled selected>Priority</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                </select>
+                <button id="saveChanges">SAVE</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
