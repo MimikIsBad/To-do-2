@@ -1,337 +1,340 @@
 body {
-    background-color: rgb(31, 31, 31);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: 0.3s;
+  background-color: rgb(31, 31, 31);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
 }
 
 #newBtn {
-    background-color: rgb(37, 37, 37);
-    width: 90%;
-    border: none;
-    color: rgb(240, 127, 117);
-    height: 40px;
-    text-align: left;
-    font-size: 1em;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: 0.3s;
+  background-color: rgb(37, 37, 37);
+  width: 90%;
+  border: none;
+  color: rgb(240, 127, 117);
+  height: 40px;
+  text-align: left;
+  font-size: 1em;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
 .selectedMenu {
-    background-color: rgb(82, 37, 37);
-    color: rgb(240, 127, 117);
+  background-color: rgb(82, 37, 37);
+  color: rgb(240, 127, 117);
 }
 
 .selectedMenu:hover {
-    background-color: rgb(82, 37, 37);
+  background-color: rgb(82, 37, 37);
 }
 
 button {
-    background-color: rgb(37, 37, 37);
-    width: 90%;
-    border: none;
-    color: rgb(255, 255, 255);
-    height: 35px;
-    text-align: left;
-    font-size: .9em;
-    border-radius: 5px;
-    margin-top: 5px;
+  background-color: rgb(37, 37, 37);
+  width: 90%;
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 35px;
+  text-align: left;
+  font-size: 0.9em;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 button:hover {
-    background-color: rgb(49, 48, 34);
-    cursor: pointer;
+  background-color: rgb(49, 48, 34);
+  cursor: pointer;
 }
 
 #side-menu {
-    background-color: rgb(37, 37, 37);
-    width: 280px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+  background-color: rgb(37, 37, 37);
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #newBtn:hover {
-    background-color: rgb(49, 48, 34);
+  background-color: rgb(49, 48, 34);
 }
 
 main {
-    display: flex;
-    margin-left: 280px; /* Adjust this margin to match the width of the sidebar */
+  display: flex;
+  margin-left: 280px; /* Adjust this margin to match the width of the sidebar */
 }
 
 #displayContainer {
-    flex: 1; /* Takes the remaining width of the container */
-    padding: 20px;
-    background-color: rgb(31, 31, 31);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
+  flex: 1; /* Takes the remaining width of the container */
+  padding: 20px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 
 form {
-    background-color: rgb(37, 37, 37);
-    width: 230px;
-    border: 1px rgb(63, 63, 63) solid;
-    border-radius: 12px;
-    padding: 10px;
-    position: relative;
-    margin-bottom: 4px;
-    margin-top: 4px;
+  background-color: rgb(37, 37, 37);
+  width: 230px;
+  border: 1px rgb(63, 63, 63) solid;
+  border-radius: 12px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 li {
-    background-color: rgb(37, 37, 37);
-    list-style-type: none;
+  background-color: rgb(37, 37, 37);
+  list-style-type: none;
 }
 
-#title, #desc {
-    background-color: rgb(37, 37, 37);
-    border: none;
-    border-radius: 10px;
-    width: 100%;
+#title,
+#desc {
+  background-color: rgb(37, 37, 37);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
 }
 
 #title {
-    height: 30px;
-    font-size: 1.3em;
-    caret-color: white;
-    font-weight: bold;
-    color: white;
+  height: 30px;
+  font-size: 1.3em;
+  caret-color: white;
+  font-weight: bold;
+  color: white;
 }
 
 #title:focus {
-    outline: none;
+  outline: none;
 }
 
 #title::placeholder {
-    color: rgb(132, 132, 132);
+  color: rgb(132, 132, 132);
 }
 
 #desc {
-    font-size: .9em;
-    height: 20px;
-    margin-bottom: 9px;
-    color: white;
+  font-size: 0.9em;
+  height: 20px;
+  margin-bottom: 9px;
+  color: white;
 }
 
 #desc:focus {
-    outline: none;
+  outline: none;
 }
 
 #desc::placeholder {
-    color: rgb(132, 132, 132);
+  color: rgb(132, 132, 132);
 }
 
 #button-options {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-#dueDate, #priority {
-    height: 30px;
-    background-color: rgb(37, 37, 37);
-    border: 1px rgb(63, 63, 63) solid;
-    color: rgb(216, 216, 216);
-    border-radius: 8px;
+#dueDate,
+#priority {
+  height: 30px;
+  background-color: rgb(37, 37, 37);
+  border: 1px rgb(63, 63, 63) solid;
+  color: rgb(216, 216, 216);
+  border-radius: 8px;
 }
 
 #dueDate {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #priority {
-    width: 70px;
-    text-align: center;
+  width: 70px;
+  text-align: center;
 }
 
 #priority:focus {
-    outline: none;
+  outline: none;
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
 }
 
-.title-home, #task-amount-home {
-    color: white;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+.title-home,
+#task-amount-home {
+  color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title-home {
-    text-align: center; /* Center title text */
+  text-align: center; /* Center title text */
 }
 
 #task-amount-projects {
-    color: rgb(106, 106, 106);
-    font-size: .9em;
-    text-align: center;
-    margin-top: 1.5px;
-    font-family: Arial, Helvetica, sans-serif;
+  color: rgb(106, 106, 106);
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #task-amount-home {
-    color: rgb(106, 106, 106);
-    font-size: .9em;
-    text-align: center;
-    margin-top: 1.5px;
+  color: rgb(106, 106, 106);
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 1.5px;
 }
 
 .item-container {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(73, 73, 73);
-    margin-bottom: 30px;
-    min-width: 500px;
-    transition: 1s;
-    cursor: pointer;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(73, 73, 73);
+  margin-bottom: 30px;
+  min-width: 500px;
+  transition: 1s;
+  cursor: pointer;
 }
 
 #displayWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .deleteBtn {
-    width: 100px;
-    text-align: center;
-    margin-top: 0;
-    align-self: center;
+  width: 100px;
+  text-align: center;
+  margin-top: 0;
+  align-self: center;
 }
 
 #editTaskContainer {
-    background-color: rgb(37, 37, 37);
-    width: 500px;
-    height: 415px;
-    position: absolute;
-    top: 270px;
-    left: 650px;
-    display: none;
-    backdrop-filter: blur(50px);
-    border: 1px rgb(60, 60, 60) solid;
-    border-radius: 10px;
-    z-index: 20;
+  background-color: rgb(37, 37, 37);
+  width: 500px;
+  height: 415px;
+  position: absolute;
+  top: 270px;
+  left: 650px;
+  display: none;
+  backdrop-filter: blur(50px);
+  border: 1px rgb(60, 60, 60) solid;
+  border-radius: 10px;
+  z-index: 20;
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 5px;
-    border-bottom: 1px rgb(60, 60, 60) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5px;
+  border-bottom: 1px rgb(60, 60, 60) solid;
 }
 
 #xBtn {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    transition: .3s;
-    margin: 8px;
-    position: absolute;
-    top: 2px;
-    right: 0;
-    font-size: 1.2em;
-    font-weight: bold;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: 0.3s;
+  margin: 8px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #xBtn:hover {
-    background-color: rgb(51, 51, 51);
+  background-color: rgb(51, 51, 51);
 }
 
 #editTitle {
-    font-size: 2em;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 8px;
+  font-size: 2em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
 }
 
 #editDesc {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    min-width: 300px;
-    height: 100px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  min-width: 300px;
+  height: 100px;
 }
 
 #main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 #saveChanges {
-    background-color: rgb(82, 37, 37);
-    width: 60px;
-    text-align: center;
-    font-weight: bold;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+  background-color: rgb(82, 37, 37);
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 h3 {
-    color: rgb(117, 117, 117);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
-    font-size: 1.5em;
-    border-bottom: 1px rgb(185, 185, 185) solid;
-    width: 150px;
-    padding-bottom: 5px;
-    margin-bottom: 8px;
+  color: rgb(117, 117, 117);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  border-bottom: 1px rgb(185, 185, 185) solid;
+  width: 150px;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 #editTitle:focus {
-    border: none;
+  border: none;
 }
 
 #dateTitle {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #editDate {
-    height: 30px;
-    background-color: rgb(37, 37, 37);
-    border: 1px rgb(63, 63, 63) solid;
-    color: rgb(216, 216, 216);
-    border-radius: 8px;
-    margin-bottom: 10px;
+  height: 30px;
+  background-color: rgb(37, 37, 37);
+  border: 1px rgb(63, 63, 63) solid;
+  color: rgb(216, 216, 216);
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 #editPriority {
-    height: 30px;
-    background-color: rgb(37, 37, 37);
-    border: 1px rgb(63, 63, 63) solid;
-    color: rgb(216, 216, 216);
-    border-radius: 8px;
-    text-align: center;
-    width: 70px;
+  height: 30px;
+  background-color: rgb(37, 37, 37);
+  border: 1px rgb(63, 63, 63) solid;
+  color: rgb(216, 216, 216);
+  border-radius: 8px;
+  text-align: center;
+  width: 70px;
 }
 
 #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(8, 8, 8, 0.4); /* Transparent background */
-    backdrop-filter: blur(5px); /* Apply blur */
-    z-index: 10;
-    display: none; /* Hidden by default */
-    transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 8, 8, 0.4); /* Transparent background */
+  backdrop-filter: blur(5px); /* Apply blur */
+  z-index: 10;
+  display: none; /* Hidden by default */
+  transition: 0.2s;
 }

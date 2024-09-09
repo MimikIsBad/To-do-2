@@ -1,88 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do It</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="side-menu">
-            <button id="newBtn">+ New Item</button>
-            <form id="formElement" style="display: none;">
-                <li>
-                    <input type="text" name="title" id="title" placeholder="Item Name">
-                </li>
-                <li>
-                    <input type="text" name="desc" id="desc" placeholder="Description">
-                </li>
-                <div id="button-options">
-                    <li>
-                        <select name="priority" id="priority">
-                            <option value="" disabled selected>Priority</option>
-                            <option value="Low">Low</option>
-                            <option value="Medium">Medium</option>
-                            <option value="High">High</option>
-                        </select>
-                    </li>
-                    <li>
-                        <input type="date" name="dueDate" id="dueDate">
-                    </li>
-                </div>
-                <button id="addBtn" type="submit">Add Item</button>
-                <button id="cancelBtn" type="reset">Cancel</button>
-            </form>
-
-            <button class="nav-button" id="todayBtn">Tasks</button>
-            <button class="nav-button" id="projectBtn">My Projects</button>
-    
-        </div>
-        
-        <div id="notesSection">
-            <form id="noteForm" style="display: none;">
-              <input type="text" id="noteInput" placeholder="Enter your note">
-              <button type="submit">Save Note</button>
-              <button type="button" id="cancelNoteBtn">Cancel</button>
-            </form>
-            <div id="notesContainer"></div>
+      <div id="side-menu">
+        <button id="newBtn">+ New Item</button>
+        <form id="formElement" style="display: none">
+          <li>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Item Name"
+            />
+          </li>
+          <li>
+            <input
+              type="text"
+              name="desc"
+              id="desc"
+              placeholder="Description"
+            />
+          </li>
+          <div id="button-options">
+            <li>
+              <select name="priority" id="priority">
+                <option value="" disabled selected>Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </li>
+            <li>
+              <input type="date" name="dueDate" id="dueDate" />
+            </li>
           </div>
-          
+          <button id="addBtn" type="submit">Add Item</button>
+          <button id="cancelBtn" type="reset">Cancel</button>
+        </form>
 
-        <div id="displayContainer">
-                <div id="homePage"></div>
-                <div id="projectPage"></div>
+        <button class="nav-button" id="todayBtn">Tasks</button>
+        <button class="nav-button" id="projectBtn">My Projects</button>
+      </div>
 
-            <div id="displayWrapper">
-                <ul id="listDisplay" style="display: none;">
-                    
-                </ul>
-                <ul id="projectDisplay" style="display: none;">
-                    
-                </ul>
-            </div>
+      <div id="notesSection">
+        <form id="noteForm" style="display: none">
+          <input type="text" id="noteInput" placeholder="Enter your note" />
+          <button type="submit">Save Note</button>
+          <button type="button" id="cancelNoteBtn">Cancel</button>
+        </form>
+        <div id="notesContainer"></div>
+      </div>
+
+      <div id="displayContainer">
+        <div id="homePage"></div>
+        <div id="projectPage"></div>
+
+        <div id="displayWrapper">
+          <ul id="listDisplay" style="display: none"></ul>
+          <ul id="projectDisplay" style="display: none"></ul>
         </div>
+      </div>
 
-        <div id="overlay"></div>
-        <div id="editTaskContainer">
-            <div id="header">
-                <button id="xBtn">X</button>
-                <div id="editTitle" contenteditable="true"></div>
-            </div>
-            <div id="main-section">
-                <h3 id="descTitle">Description:</h3>
-                <div id="editDesc" contenteditable="true"></div>
-                <h3 id="dateTitle">Date:</h3>
-                <input type="date" id="editDate"></input>
-                <h3 id="priorityTitle">Priority:</h3>
-                <select id="editPriority">
-                    <option value="Priority" disabled selected>Priority</option>
-                            <option value="Low">Low</option>
-                            <option value="Medium">Medium</option>
-                            <option value="High">High</option>
-                </select>
-                <button id="saveChanges">SAVE</button>
-            </div>
+      <div id="overlay"></div>
+      <div id="editTaskContainer">
+        <div id="header">
+          <button id="xBtn">X</button>
+          <div id="editTitle" contenteditable="true"></div>
         </div>
+        <div id="main-section">
+          <h3 id="descTitle">Description:</h3>
+          <div id="editDesc" contenteditable="true"></div>
+          <h3 id="dateTitle">Date:</h3>
+          <input type="date" id="editDate" />
+          <h3 id="priorityTitle">Priority:</h3>
+          <select id="editPriority">
+            <option value="Priority" disabled selected>Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <button id="saveChanges">SAVE</button>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
