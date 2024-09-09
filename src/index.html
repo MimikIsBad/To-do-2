@@ -11,7 +11,7 @@
             <button id="newBtn">+ New Item</button>
             <form id="formElement" style="display: none;">
                 <li>
-                    <input type="text" name="title" id="title" placeholder="Task Name">
+                    <input type="text" name="title" id="title" placeholder="Item Name">
                 </li>
                 <li>
                     <input type="text" name="desc" id="desc" placeholder="Description">
@@ -33,13 +33,25 @@
                 <button id="cancelBtn" type="reset">Cancel</button>
             </form>
 
-            <button class="nav-button" id="todayBtn">Home</button>
+            <button class="nav-button" id="todayBtn">Tasks</button>
             <button class="nav-button" id="projectBtn">My Projects</button>
+    
         </div>
+        
+        <div id="notesSection">
+            <form id="noteForm" style="display: none;">
+              <input type="text" id="noteInput" placeholder="Enter your note">
+              <button type="submit">Save Note</button>
+              <button type="button" id="cancelNoteBtn">Cancel</button>
+            </form>
+            <div id="notesContainer"></div>
+          </div>
+          
 
         <div id="displayContainer">
                 <div id="homePage"></div>
                 <div id="projectPage"></div>
+
             <div id="displayWrapper">
                 <ul id="listDisplay" style="display: none;">
                     

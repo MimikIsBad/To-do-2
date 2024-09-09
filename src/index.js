@@ -2,6 +2,7 @@ import './styles.css';
 import { loadHomePage } from './homePage';
 import { loadProjectPage } from './projectPage';
 
+
 document.addEventListener("DOMContentLoaded", () => {
     handlePageChange(loadHomePage, "todayBtn");
 
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Today button clicked");
         handlePageChange(loadHomePage, "todayBtn");
     });
+
 
     document.getElementById("projectBtn").addEventListener("click", () => {
         console.log("Project button clicked");
